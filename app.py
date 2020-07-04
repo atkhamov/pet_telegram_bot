@@ -13,3 +13,19 @@ chat_id = message["from"]["id"]
 text = message["text"]
 
 sent_message = requests.get(API_LINK + f"/sendMessage?chat_id={chat_id}&text=Привет, ты написал {text}")
+
+
+# import requests
+#
+# url = "https://travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com/v1/prices/direct/"
+#
+# querystring = {"destination":"LED","origin":"MOW"}
+#
+# headers = {
+#     'x-rapidapi-host': "travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com",
+#     'x-rapidapi-key': "SIGN-UP-FOR-KEY"
+#     }
+#
+# response = requests.request("GET", url, headers=headers, params=querystring)
+#
+# print(response.text)
