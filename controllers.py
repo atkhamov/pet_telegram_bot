@@ -27,7 +27,7 @@ class Telegram:
         self.event_loop = loop
         self.autodeleting = None
 
-    async  def create_session(self):
+    async def create_session(self):
 
         self.client = Client(
             self.session_name,
